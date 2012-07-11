@@ -1,0 +1,16 @@
+<phpunit backupGlobals="false"
+		 backupStaticAttributes="false"
+		 bootstrap="bootstrap.php"
+		 strict="true">
+		 
+	<testsuites>
+		<testsuite name="RPS">
+			<directory>tests</directory>
+		</testsuite>
+	</testsuites>
+ 	 
+	<logging>
+		<log type="coverage-html" target="logs/coverage" charset="UTF-8" yui="true" highlight="true" lowUpperBound="35" highLowerBound="70"/>
+		<log type="junit" target="logs/logfile.xml" logIncompleteSkipped="false"/>
+	</logging>
+</phpunit>
